@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <h1> ☾ Lua ateliê ☽࣪</h1>
+        <h1>⋆☾ Lua Ateliê ☽⋆</h1>
         <nav>
             <ul style="list-style: none; display: flex; gap: 20px; padding: 0;">
                 <li><a href="#home">Home</a></li>
@@ -18,34 +18,30 @@
         </nav>
     </header>
     <main>
-        <section id="produtos">
-            <h2>Produtos</h2>
-            <div class="produto">
-                <a href="produto1.html">
-                    <img src="src/b51e6217d3fbbb87.jpg" alt="Produto 1" class="produto-img">
-                </a>
-                <h3><a href="produto1.html" class="produto-link">Produto 1</a></h3>
-                <p>Descrição do Produto 1</p>
-                <p class="preco">Preço: R$ 30,00</p>
-                <button class="like-btn" onclick="incrementLike(this)"> ♥ <span class="like-count">0</span></button>
-            </div>
-            <div class="produto">
-                <a href="produto2.html">
-                    <img src="src/923d5d8c8fcd9702.jpg" alt="Produto 2" class="produto-img">
-                </a>
-                <h3><a href="produto2.html" class="produto-link">Produto 2</a></h3>
-                <p>Descrição do Produto 2</p>
-                <p class="preco">Preço: R$ 30,00</p>
-                <button class="like-btn" onclick="incrementLike(this)"> ♥ <span class="like-count">0</span></button>
-            </div>
-            <div class="produto">
-                <a href="produto3.html">
-                    <img src="src/152599652.png" alt="Produto 3" class="produto-img">
-                </a>
-                <h3><a href="produto3.html" class="produto-link">Produto 3</a></h3>
-                <p>Descrição do Produto 3</p>
-                <p class="preco">Preço: R$ 30,00</p>
-                <button class="like-btn" onclick="incrementLike(this)"> ♥ <span class="like-count">0</span></button>
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="galeria-container">
+                <div class="galeria-item">
+                    <img src="src/152599652.png" alt="Chaveiro | Trafalgar D. Water Law" class="galeria-img">
+                    <p>Chaveiro | Trafalgar D. Water Law</p>
+                    <button onclick="incrementLike(this)" class="like-btn">
+                        🖤 <span class="like-count">0</span>
+                    </button>
+                </div>
+                <div class="galeria-item">
+                    <img src="src/923d5d8c8fcd9702.jpg" alt="Chaveiro | Logo Python" class="galeria-img">
+                    <p>Chaveiro | Logo Python cores diversas</p>
+                    <button onclick="incrementLike(this)" class="like-btn">
+                        🖤 <span class="like-count">0</span>
+                    </button>
+                </div>
+                <div class="galeria-item">
+                    <img src="src/b51e6217d3fbbb87.jpg" alt="Chaveiro | Logo Python" class="galeria-img">
+                    <p>Chaveiro | Logo Python</p>
+                    <button onclick="incrementLike(this)" class="like-btn">
+                        🖤 <span class="like-count">0</span>
+                    </button>
+                </div>
             </div>
         </section>
         <script>
