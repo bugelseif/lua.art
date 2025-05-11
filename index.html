@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lua</title>
+</head>
+<body>
+    <header class="header">
+        <h1> ☪︎ Lua ateliê</h1>
+        <nav>
+            <ul style="list-style: none; display: flex; gap: 20px; padding: 0;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="produto">
+                <a href="produto1.html">
+                    <img src="src/b51e6217d3fbbb87.jpg" alt="Produto 1" class="produto-img">
+                </a>
+                <h3><a href="produto1.html" class="produto-link">Produto 1</a></h3>
+                <p>Descrição do Produto 1</p>
+                <p class="preco">Preço: R$ 30,00</p>
+                <button class="like-btn" onclick="incrementLike(this)"> ♥ <span class="like-count">0</span></button>
+            </div>
+            <div class="produto">
+                <a href="produto2.html">
+                    <img src="src/923d5d8c8fcd9702.jpg" alt="Produto 2" class="produto-img">
+                </a>
+                <h3><a href="produto2.html" class="produto-link">Produto 2</a></h3>
+                <p>Descrição do Produto 2</p>
+                <p class="preco">Preço: R$ 30,00</p>
+                <button class="like-btn" onclick="incrementLike(this)"> ♥ <span class="like-count">0</span></button>
+            </div>
+            <div class="produto">
+                <a href="produto3.html">
+                    <img src="src/152599652.png" alt="Produto 3" class="produto-img">
+                </a>
+                <h3><a href="produto3.html" class="produto-link">Produto 3</a></h3>
+                <p>Descrição do Produto 3</p>
+                <p class="preco">Preço: R$ 30,00</p>
+                <button class="like-btn" onclick="incrementLike(this)"> ♥ <span class="like-count">0</span></button>
+            </div>
+        </section>
+        <script>
+        function incrementLike(btn) {
+            const countSpan = btn.querySelector('.like-count');
+            let count = parseInt(countSpan.textContent, 10);
+            countSpan.textContent = count + 1;
+        }
+        </script>
+            
+</body>
+</html>
